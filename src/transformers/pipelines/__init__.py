@@ -710,6 +710,7 @@ def pipeline(
     >>> tokenizer = AutoTokenizer.from_pretrained("google-bert/bert-base-cased")
     >>> recognizer = pipeline("ner", model=model, tokenizer=tokenizer)
     ```"""
+    print("You are running a local transformer package")
     if model_kwargs is None:
         model_kwargs = {}
     # Make sure we only pass use_auth_token once as a kwarg (it used to be possible to pass it in model_kwargs,
